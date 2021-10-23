@@ -1,0 +1,83 @@
+.sos-container{
+    margin:20px 20px 0 20px;
+    height: calc(100vh - 70px);
+    overflow: hidden;
+    width: 95%;
+}
+.sos-nav{
+    width: 100%;
+    border-bottom:1px solid lightgrey;
+    display: flex;
+        
+}
+.sos-nav-items{
+    font-size: 20px;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+.sos-active{
+    border: 1px solid lightgrey;
+    border-bottom: none;
+    background-color: rgb(236, 236, 236);
+    cursor: unset;
+    color: rgb(97, 97, 97);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.sos-message{
+    display: flex;
+    flex-wrap: wrap;
+}
+.sos-message-items{
+    position: relative;
+    font-size: 14px;
+    margin: 10px 10px;
+}
+.sos-message-head{
+    margin: 20px 0 0 0;
+    padding: 10px 5px;
+    display: flex;
+    justify-content: space-between;
+    background-color: lightgrey;
+    width: 350px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 1px solid grey;
+}
+.sos-message-title{
+    width: 80%;
+}
+.sos-message-icons{
+    margin: auto 0;
+    width: 20%;
+    cursor: pointer;
+}
+.c-icon{
+    margin-top: 4px;
+    width: 1em;
+    height: 1em;
+    font-size: 1em;
+    opacity: 0.5;
+    transition-property: opacity;
+    transition-duration: 0.3s;
+}
+.c-icon:hover{
+    opacity: 1;
+    transition-duration: .3s;
+}
+.sos-message-body{
+    padding: 0 5px;
+    background-color: rgb(230, 230, 230);
+    width: 350px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: absolute;
+    z-index: 9;
+    overflow: hidden;
+    max-height: calc(100vh - 50px);
+    transition: max-height 0.5s ease-in;
+}
+.dropdown{
+    max-height: 0;
+    transition: max-height 0.5s ease-out;
+}

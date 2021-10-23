@@ -1,0 +1,83 @@
+.container{
+    height: calc(100vh - 40px);
+    overflow-x: scroll;
+}
+.checker{
+    display: flex;
+    float: right;
+    position: relative;
+    margin: 20px;
+    
+    border: 2px solid lightgray;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.checker div{
+    padding: 5px 10px;
+}
+.pointer{
+    background-color: #5584ff;
+    color: white;
+    height: 100%;
+}
+.buttons{
+    margin: 0px 10px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition-property: opacity;
+    transition-duration: 0.3s;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+}
+.buttons:hover{
+    opacity: 1;
+}
+.active{
+    background-color: #5584ff;
+    color: white;
+    opacity: 1;
+    transition-duration: 0.5s;
+}
+.mod-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.mod-container-2{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.area-1{
+    width: 100%;
+    margin: 20px;
+    padding: 20px;
+    border: 3px solid #5584ff;
+    border-radius: 10px;
+}
+.area-2{
+    width: calc(50% - 86px); 
+    margin: 20px;
+    padding: 20px;
+    border: 3px solid #5584ff;
+    border-radius: 10px;
+}
+.mod-area-enter-active {
+    animation-name: rotat;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+}
+.mod-area-leave-active{
+    animation-name: rotat;
+    animation-direction: reverse;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+}
+@keyframes rotat{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}

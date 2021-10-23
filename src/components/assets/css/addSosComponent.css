@@ -1,0 +1,78 @@
+.add-sos-form{
+    margin: 20px auto;
+    box-shadow: 0px 0px 2px black;
+    width: 600px;
+    border-radius: 5px;
+}
+.add-sos-name{
+    font-size: 20px;
+    border-bottom:1px solid lightgrey;
+    width: calc(100% - 20px);
+    padding: 10px;
+}
+.add-sos-content{
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 20px);
+    padding:30px 10px;
+}
+.add-sos-title{
+    font-size: 18px;
+    margin: auto 0;
+}
+.add-sos-input{
+    font-size: 17px;
+    color: rgb(65, 65, 65);
+    outline: none;
+    width: 350px;
+    border-radius:5px;
+    border-width: 1px;
+}
+.add-sos-input:hover{
+    box-shadow: 0px 0px 2px #5584ff;
+}
+.add-sos-input:focus{
+    border:1px solid #5584ff;
+    box-shadow: 0px 0px 3px #5584ff;
+}
+.add-sos-textarea{
+    font-size: 17px;
+    color: rgb(65, 65, 65);
+    outline: none;
+    width: 350px;
+    height: 250px;
+    border-radius: 5px;
+    border-width: 1px;
+}
+.add-sos-textarea:hover{
+    box-shadow: 0px 0px 2px #5584ff;
+}
+.add-sos-textarea:focus{
+    border:1px solid #5584ff;
+    box-shadow: 0px 0px 3px #5584ff;
+}
+.add-sos-buttons{
+    padding: 10px;
+    width: calc(100% - 20px);
+    border-top: 1px solid lightgrey;
+}
+.add-sos-button{
+    font-size: 17px;
+    background-color: #5584ff;
+    border:0;
+    padding:5px 10px;
+    border-radius: 5px;
+    color: white;
+    margin-right: 10px;
+    cursor: pointer;
+    transition-property: opacity;
+    transition-duration: 0.3s;
+}
+.add-sos-button:hover{
+    opacity: 0.9;
+    transition-duration: 0.3s;
+}
+.add-sos-button:active{
+    background-color: white;
+    color: #5584ff;
+}

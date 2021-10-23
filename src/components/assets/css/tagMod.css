@@ -1,0 +1,74 @@
+.tag-container{
+    display: flex;
+    border-top: 1px solid lightgrey;
+    padding-top: 10px;
+}
+.block-1{
+    width: 40%;
+    text-align: center;
+    display: flex;flex-direction: column;justify-content: space-between;
+}
+.block-1 div{
+    margin-top: 10px;
+}
+.block-3{
+    width: 60%;
+}
+.tag-buttons{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.tag-buttons div{
+    padding: 5px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+.tag-buttons div:hover{
+    background-color: lightgrey;
+    cursor: pointer;
+}
+.tag-buttons div:active{
+    transform: scale(0.9);
+}
+.tag-options{
+    display: flex;justify-content: left;flex-wrap: wrap;
+    margin: 20px 0;
+}
+.tag-elem{
+    padding: 3px;
+    margin:3px;
+    background-color: lightgrey;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.tag-elem:active{
+    transform:scale(0.9);
+}
+.param-input{
+    min-height: 20px;
+    min-width: 200px;
+}
+.lg-pr{
+    margin:20px 0 0 20px;
+    position: relative;
+    padding: 5px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+}
+.lang{
+    position: absolute;
+    top: 0;left: 0;
+    padding: 5px;
+    background-color: lightgrey;
+}
+.lg-pr-input{
+    display: flex;
+    justify-content: right;
+    margin-top: 10px;
+}
+input{
+    outline-color: #5584ff !important;
+}

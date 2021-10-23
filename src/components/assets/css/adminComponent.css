@@ -1,0 +1,197 @@
+.admin-container{
+    display: flex;
+    width: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow: hidden;
+    user-select: none;
+}
+.admin-menu-fix{
+    width: 5%;
+}
+.admin-menu{
+    position: absolute;
+    width: 5%;
+    background-color: #0e1a35;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition-duration: 0.5s;
+    transition-property: width;
+    z-index: 999;
+}
+.admin-menu:hover{
+    width: 15%;
+    transition-duration: 0.5s;
+}
+.admin-menu:hover .admin-container-2{
+    width: 85%;
+    transition-duration: 0.5s;
+}
+.admin-menu:hover .admin-show{
+    height: auto;
+}
+.admin-name{
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    display: none;
+}
+.admin-container-2{
+    width: 95%;
+    transition-duration: 0.5s;
+    height: 100vh;
+    overflow: hidden;
+}
+.admin-nav{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    box-shadow: 0px 1px 1px lightgrey;
+}
+.admin-nav-1-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.admin-search-icon{
+    width:20px;
+    height: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.admin-search-panel{
+    border:1px solid #5584ff;
+    padding: 0;
+    border-radius: 10px;
+    transition-property: box-shadow;
+    transition-duration: 0.2s;
+    display: none;
+}
+.admin-search-panel:focus-within{
+    transition-duration: 0.2s;
+    box-shadow: 0px 0px 3px #5584ff;
+}
+.admin-search-input{
+    margin: 0;
+    padding:0 5px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+.admin-search-button{
+    margin: 0;
+    padding:0 5px;
+    color: white;
+    font-size: 20px;
+    background-color: #5584ff;
+    border: none;
+    cursor: pointer;
+    font-style: italic;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    
+}
+.admin-nav-2-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.admin-button{
+    margin:auto 20px;
+    height: 30px;
+    background-color: #5584ff;
+    color: white;
+    border:0;
+    border-radius: 20px;
+    padding: 0 20px;
+    cursor: pointer;
+    transition-property: box-shadow, transform;
+    transition-duration: 0.3s;
+    
+}
+.admin-button:active{
+    background-color: white;
+    color: #5584ff;
+}
+.admin-button:hover{
+    box-shadow: 0px 0px 3px black;
+    transition-duration: 0.3s;
+    transform:translateY(1px);
+}
+.admin-mailbox-div{
+    margin: auto 20px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    transition-property: opacity;
+    transition-duration: 0.3s;
+}
+.admin-mailbox-div:hover{
+    opacity: 0.5;
+    transition-duration: 0.3s;
+}
+.admin-user-icon{
+    width: 40px;
+    border-radius: 50px;
+    margin:auto 20px;
+}
+.admin-exit-icon{
+    width: 20px;
+    margin: auto 20px;
+    cursor: pointer;
+}
+.admin-exit-icon:hover{
+    
+    transition-duration: 0.3s;
+}
+.admin-menu-items{
+    background-color: #122143;
+    height: 70px;
+    padding-left: 15px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.admin-menu-items:hover{
+    background-color: #162850;
+    transition-duration: 0.3s;
+}
+.admin-menu-items-icon{
+    width: 20px;
+    margin:auto 5px;
+}
+.admin-active-item{
+    border-left: 6px solid #5584ff;
+    background-color: #1c3368;
+}
+.admin-show{
+    height: 0;
+    overflow: hidden;
+}
+.admin-content{
+    height: calc(100vh - 50px);
+    overflow: hidden;
+    
+}
+.content-enter, .content-leave-to{
+    opacity: 0;
+}
+.content-enter-active, .content-leave-active{
+    transition-duration: 0.5s;
+}

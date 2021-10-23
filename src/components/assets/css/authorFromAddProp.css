@@ -1,0 +1,16 @@
+.add-prop-area{
+    top: 50px;
+}
+.author-input-logo{
+    width: 120px;
+    transform: scale(0.8);
+}
+.newAuthor-area{
+    border: 1px solid lightgrey;
+    background: rgb(243, 243, 243);
+    border-radius: 10px;
+    margin-top:10px;
+}
+.input-menu{
+    background: white;
+}
